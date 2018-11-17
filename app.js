@@ -28,15 +28,7 @@ input2 = document.getElementsByTagName('input')[1],
 input3 = document.getElementsByTagName('input')[2],
 input4 = document.getElementsByTagName('input')[3],
 submit = document.getElementsByTagName('input')[4],
-message = document.getElementsByClassName('msg')[0],
-
-contestants = { 
-    contestant1: ['username', '1000'],
-    contestant2: ['username', '2000'],
-    contestant3: ['username', '3000'],
-    contestant4: ['username', '4000'],
-},
-localData;
+message = document.getElementsByClassName('msg')[0];
 
 // Read Firebase Data 
 
@@ -74,6 +66,7 @@ function updatePrizeTotal( event ) {
    
     // Success!
     message.innerHTML = '👍 Puntos Actualizados';
+    
     setTimeout(
         function(){
             message.innerText = ' ';
