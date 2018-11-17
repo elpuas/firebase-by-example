@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App</title>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+    <style>
+     body {
+        font-family: Arial, Helvetica, sans-serif;
+     }   
+     ul {
+         list-style: none;
+         /* width: 100%; */
+         margin: 0;
+         padding: 0;
+     }
+     li {
+         display: inline-block;
+         width: 70%;
+         margin-bottom: 10px;
+     }
+     ul li:first-child {
+         margin-right: 10px;
+         text-align: left;
+         width: 25%;
+         
+     }
+
+     input {
+         border-radius: 5px;
+         border: none;
+         box-shadow: 0 0 2px gray;
+         height: 30px;
+         padding: 3px;
+         width: 100%;
+     }
+
+     div#app > div {
+         max-width: 600px;
+         margin: 0 auto;
+         box-shadow: 0 0 2px gray;
+         padding: 25px;
+         border-radius: 15px;
+         text-align: center;
+     }
+     input[type="submit"]{
+         width: 100%;
+         background-color: orange;
+         color: white;
+         font-size: 24px;
+         height: 40px;
+         text-transform: uppercase;
+     }
+     img {
+         display: block;
+         margin: 50px auto;
+     }
+
+     div#app .screen {
+         margin-bottom: 25px;
+         padding: 10px;
+         box-shadow: none;
+     }
+
+     div#app .screen h1 {
+         font-size: 24px;
+     }
+     .screen ul li {
+         width: 20% ;
+         text-align: center;
+         border: 1px solid greenyellow;
+         border-radius: 4px;
+     }
+     .screen ul li:first-child {
+         margin-right: inherit;
+     }
+
+     .msg {
+         color: greenyellow;
+     }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="screen">
+            <h3>Panel de Participantes</h3>
+            <ul>
+        <li><h1></h1><p>Participante 1</p></li>
+        <li><h1></h1><p>Participante 2</p></li>
+        <li><h1></h1><p>Participante 3</p></li>
+        <li><h1></h1><p>Participante 4</p></li>
+        </ul>
+        <p class="msg"></p>
+        </div>
+        <div>
+            <ul>
+                <li>Participante 1</li>
+                <li><input type="text" value=""></li>
+            </ul>
+            <ul>
+                <li>Participante 2</li>
+                <li><input type="text" value=""></li>
+            </ul>
+            <ul>
+                <li>Participante 3</li>
+                <li><input type="text" value=""></li>
+            </ul>  
+            <ul>
+                <li>Participante 4</li>
+                <li><input type="text" value=""></li>
+            </ul>     
+            <p><input type="submit"></p>
+        </div>
+        <img src="logo.png" />
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
